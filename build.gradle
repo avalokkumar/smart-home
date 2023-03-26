@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.6.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+
+group = 'com.clay.sh'
+version = 'v0.1'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+//	implementation project(':analytics')
+//	implementation project(':energy-control')
+//	implementation project(':entertainment')
+//	implementation project(':home-security')
+//	implementation project(':identity-server')
+//	implementation project(':integration')
+//	implementation project(':notification')
+//	implementation project(':smart-lighting')
+//	implementation project(':commons')
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+}
+
+test {
+	useJUnitPlatform()
+}

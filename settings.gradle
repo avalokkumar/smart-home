@@ -1,0 +1,29 @@
+rootProject.name = 'smart-home'
+
+include 'modules:commons'
+findProject(':modules:commons')?.name = 'commons'
+
+include 'modules:analytics'
+findProject(':modules:analytics')?.name = 'analytics'
+
+include 'modules:energy-control'
+findProject(':modules:energy-control')?.name = 'energy-control'
+
+include 'modules:entertainment'
+findProject(':modules:entertainment')?.name = 'entertainment'
+
+include 'modules:home-security'
+findProject(':modules:home-security')?.name = 'home-security'
+
+include 'modules:identity-server'
+findProject(':modules:identity-server')?.name = 'identity-server'
+
+include 'modules:integration'
+findProject(':modules:integration')?.name = 'integration'
+
+include 'modules:notification'
+findProject(':modules:notification')?.name = 'notification'
+
+include 'modules:smart-lighting'
+findProject(':modules:smart-lighting')?.name = 'smart-lighting'
+
